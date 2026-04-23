@@ -1,0 +1,40 @@
+{
+  "name": {
+    "en": "Power Meter with Display",
+    "nl": "Vermogensmeter met Display"
+  },
+  "class": "socket",
+  "capabilities": [
+    "onoff",
+    "measure_power",
+    "measure_voltage",
+    "measure_current",
+    "meter_power"
+  ],
+  "zigbee": {
+    "manufacturerName": [
+      "_TZE200_rhblgy0z"
+    ],
+    "productId": [
+      "TS0601"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          0,
+          4,
+          5,
+          6,
+          1794,
+          2820
+        ]
+      }
+    },
+    "learnmode": {
+      "instruction": {
+        "en": "Put the power meter in pairing mode and start Zigbee inclusion in Homey.",
+        "nl": "Zet de vermogensmeter in koppelmodus en start Zigbee toevoegen in Homey."
+      }
+    }
+  }
+}
