@@ -3,27 +3,20 @@
   "id": "com.gledopto",
   "sdk": 3,
   "name": {
-    "en": "Gledopto and Tint lights and LED Controllers (ZigBee)",
-    "nl": "Gledopto en Tint lampen en LED Controllers (ZigBee)"
+    "en": "Zigbee Power Meters & Switches",
+    "nl": "Zigbee energiemeters en schakelaars"
   },
   "description": {
-    "en": "Control your Gledopto and Tint LED Controllers and lights (ZigBee) with Homey!",
-    "nl": "Gebruik je Gledopto en Tint LED Controllers en lampen (ZigBee) met Homey!"
+    "en": "Control and monitor specific Zigbee power meters and switches with Homey.",
+    "nl": "Bedien en monitor specifieke Zigbee energiemeters en schakelaars met Homey."
   },
-  "category": "lights",
+  "category": "tools",
   "brandColor": "#C70039",
   "version": "2.0.10",
   "compatibility": ">=5.0.0",
   "author": {
-    "name": "Marco Ruiter",
-    "email": "mruiter@tuxweb.nl"
-  },
-  "contributing": {
-    "donate": {
-      "paypal": {
-        "username": "MarcoRuiter"
-      }
-    }
+    "name": "The Glorious Chat GPT & Julian Isaacson",
+    "email": "julian_isaacson@hotmail.com"
   },
   "images": {
     "large": "assets/images/large.png",
@@ -31,10 +24,6 @@
   },
   "speech": [],
   "permissions": [],
-  "bugs": {
-    "url": "https://github.com/mruiter/com.gledopto/issues"
-  },
-  "source": "https://github.com/mruiter/com.gledopto",
   "drivers": [
     {
       "class": "light",
@@ -2401,6 +2390,91 @@
           }
         }
       ]
+    },
+    {
+      "id": "tuya_ts0001_switch_meter",
+      "name": {
+        "en": "Tongou MCB Switch Meter",
+        "nl": "Tongou MCB Schakelaar Meter"
+      },
+      "class": "socket",
+      "icon": "/drivers/tuya_ts0001_switch_meter/assets/icon.svg",
+      "capabilities": [
+        "onoff",
+        "measure_power",
+        "measure_voltage",
+        "measure_current",
+        "meter_power"
+      ],
+      "zigbee": {
+        "manufacturerName": [
+          "_TZE284_kobbcyum",
+          "_TZE284_tzreobvu"
+        ],
+        "productId": [
+          "TS0001"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              5,
+              6,
+              1794,
+              2820
+            ]
+          }
+        },
+        "learnmode": {
+          "instruction": {
+            "en": "Put the Tongou MCB in pairing mode and start Zigbee inclusion in Homey.",
+            "nl": "Zet de Tongou MCB in koppelmodus en start Zigbee toevoegen in Homey."
+          }
+        }
+      }
+    },
+    {
+      "id": "tuya_ts0601_power_meter",
+      "name": {
+        "en": "Power Meter with Display",
+        "nl": "Vermogensmeter met Display"
+      },
+      "class": "socket",
+      "icon": "/drivers/tuya_ts0601_power_meter/assets/icon.svg",
+      "capabilities": [
+        "onoff",
+        "measure_power",
+        "measure_voltage",
+        "measure_current",
+        "meter_power"
+      ],
+      "zigbee": {
+        "manufacturerName": [
+          "_TZE200_rhblgy0z"
+        ],
+        "productId": [
+          "TS0601"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              4,
+              5,
+              6,
+              1794,
+              2820
+            ]
+          }
+        },
+        "learnmode": {
+          "instruction": {
+            "en": "Put the power meter in pairing mode and start Zigbee inclusion in Homey.",
+            "nl": "Zet de vermogensmeter in koppelmodus en start Zigbee toevoegen in Homey."
+          }
+        }
+      }
     }
   ]
 }
