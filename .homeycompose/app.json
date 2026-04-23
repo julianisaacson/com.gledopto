@@ -2,36 +2,25 @@
   "id": "com.gledopto",
   "sdk": 3,
   "name": {
-    "en": "Gledopto and Tint lights and LED Controllers (ZigBee)",
-    "nl": "Gledopto en Tint lampen en LED Controllers (ZigBee)"
+    "en": "Zigbee Power Meters & Switches",
+    "nl": "Zigbee energiemeters en schakelaars"
   },
   "description": {
-    "en": "Control your Gledopto and Tint LED Controllers and lights (ZigBee) with Homey!",
-    "nl": "Gebruik je Gledopto en Tint LED Controllers en lampen (ZigBee) met Homey!"
+    "en": "Control and monitor specific Zigbee power meters and switches with Homey.",
+    "nl": "Bedien en monitor specifieke Zigbee energiemeters en schakelaars met Homey."
   },
-  "category": "lights",
+  "category": "tools",
   "brandColor": "#C70039",
-  "version": "2.0.10",
+  "version": "1.0.0",
   "compatibility": ">=5.0.0",
   "author": {
-    "name": "Marco Ruiter",
-    "email": "mruiter@tuxweb.nl"
-  },
-  "contributing": {
-    "donate": {
-      "paypal": {
-        "username": "MarcoRuiter"
-      }
-    }
+    "name": "The Glorious Chat GPT & Julian Isaacson",
+    "email": "julian_isaacson@hotmail.com"
   },
   "images": {
     "large": "assets/images/large.png",
     "small": "assets/images/small.png"
   },
   "speech": [],
-  "permissions": [],
-  "bugs": {
-    "url": "https://github.com/mruiter/com.gledopto/issues"
-  },
-  "source": "https://github.com/mruiter/com.gledopto"
+  "permissions": []
 }
